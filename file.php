@@ -1,4 +1,5 @@
 <?php
+        echo '<h1>File</h1>';
         
         $sn1 = $_GET["a"];
         $sn2 = $_GET["b"];
