@@ -7,7 +7,7 @@ echo '<p>Age: <input type="text"></p>';
 echo '<p>Email: <input type="text"></p>';
 echo '<p>Phone number: <input type="text"></p>';
 echo '<p>Gender: <input type="radio", value="female">Female <input type="radio", value="male">Male</p>';
-echo 'Comment: <textarea rows="5", cols="40></textarea>';
+
 
 echo '<p><input type="button", value="submit"></p>';
 
