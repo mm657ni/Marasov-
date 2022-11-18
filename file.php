@@ -10,12 +10,12 @@
         
         $file1 = fopen("sensors.txt","w") or die("Unable to open file!");
         
-        fwrite($file1, $name."\n");
-        fwrite($file1, $age."\n");
-        fwrite($file1, $email."\n");
-        fwrite($file1, $num."\n");
-        fwrite($file1, $com."\n");
-        fwrite($file1, $gen."\n");
+        fwrite($file1, $name ."\n");
+        fwrite($file1, $age ."\n");
+        fwrite($file1, $email ."\n");
+        fwrite($file1, $num ."\n");
+        fwrite($file1, $com ."\n");
+        fwrite($file1, $gen ."\n");
         fclose($file1);
         
         $file2 = fopen("sensors.txt","r") or die ("Subor neexistuje");
