@@ -1,27 +1,27 @@
 <?php
         echo '<h1>File</h1>';
         
-        $name = $_POST["name"];
-        $age = $_POST["age"];
-        $email = $_POST["email"];
-        $num = $_POST["number"];
-        $com = $_POST["comment"];
-        $gen = $_POST["gender"];
+        $name = "Name: ".$_POST["name"]."
+        ";
+        $age = "Age: ".$_POST["age"]."
+        ";
+        $email = "Email: ".$_POST["email"]."
+        ";
+        $num = "Phone number: ".$_POST["number"]."
+        ";
+        $com = "Comment: ".$_POST["comment"]."
+        ";
+        $gen = "Gender: ".$_POST["gender"]."
+        ";
         
         $file1 = fopen("sensors.txt","w") or die("Unable to open file!");
         
-        fwrite($file1, "Name: ");
-        fwrite($file1, $name ."\n");
-        fwrite($file1, "Age: ");
-        fwrite($file1, $age ."\n");
-        fwrite($file1, "Email: ");
-        fwrite($file1, $email ."\n");
-        fwrite($file1, "Phone number: ");
-        fwrite($file1, $num ."\n");
-        fwrite($file1, "Comment: ");
-        fwrite($file1, $com ."\n");
-        fwrite($file1, "Gender: ");
-        fwrite($file1, $gen ."\n");
+        fwrite($file1, $name);
+        fwrite($file1, $age);
+        fwrite($file1, $email);
+        fwrite($file1, $num);
+        fwrite($file1, $com);
+        fwrite($file1, $gen);
         fclose($file1);
         
         $file2 = fopen("sensors.txt","r") or die ("Subor neexistuje");
