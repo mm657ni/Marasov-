@@ -4,7 +4,7 @@ echo '<h1>PHP Form</h1>';
 
 <html> 
     <body>
-        <form action = "file.php" method = "post">
+        <form action = "getParameters.php" method = "post">
               
             Name : <input type = "text" name = "name" >
             <br><br>

@@ -1,13 +1,22 @@
 <?php
         echo '<h1>getParameters page</h1>';
         
-        $sn1 = $_GET["a"];
-        $sn2 = $_GET["b"];
+        $name = $_GET["name"];
+        $age = $_GET["age"];
+        $email = $_GET["email"];
+        $num = $_GET["number"];
+        $com = $_GET["comment"];
+        $gen = $_GET["gender"]
         
-        $text = "a=" . $sn1 . " b=" . $sn2;
-        $sum = $sn1 + $sn2;
-        
-        echo $text;
+        echo $name;
         echo "<br>";
-        echo "Sum:" . $sum;
+        echo $age;
+        echo "<br>";
+        echo $email;
+        echo "<br>";
+        echo $num;
+        echo "<br>";
+        echo $com;
+        echo "<br>";
+        echo $gen;
     ?>
