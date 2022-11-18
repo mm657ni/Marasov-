@@ -10,7 +10,7 @@
         
         $file1 = fopen("sensors.txt","w") or die("Unable to open file!");
         
-        fwrite($file1, "Name: ".$name.);
+        fwrite($file1, $name);
         fwrite($file1, $age);
         fwrite($file1, $email);
         fwrite($file1, $num);
