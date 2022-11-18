@@ -10,21 +10,16 @@
         
         $file1 = fopen("sensors.txt","w") or die("Unable to open file!");
         
-        fwrite($file1, $name);
-        fwrite($file1, $age);
-        fwrite($file1, $email);
-        fwrite($file1, $num);
-        fwrite($file1, $com);
-        fwrite($file1, $gen);
+        fwrite($file1, $name."\n");
+        fwrite($file1, $age."\n");
+        fwrite($file1, $email."\n");
+        fwrite($file1, $num."\n");
+        fwrite($file1, $com."\n");
+        fwrite($file1, $gen."\n");
         fclose($file1);
         
-        $file2 = fopen("actuator.txt","w") or die("Unable to open file!");
-        $text2 = "Value from actuator. Save this value to actuator.txt";
-        fwrite($file2, $text2);
+        $file2 = fopen("sensors.txt","r") or die ("Subor neexistuje");
+        $text = fread($file2,filesize("sensors.txt"));
+        echo $text;
         fclose($file2);
-        
-        $file3 = fopen("sensors.txt","r") or die ("Subor neexistuje");
-        $text3 = fread($file3,filesize("sensors.txt"));
-        echo $text3;
-        fclose($file3);
     ?>
