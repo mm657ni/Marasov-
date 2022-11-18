@@ -20,10 +20,10 @@ echo '<h1>PHP Form</h1>';
             Gender:
             <input type="radio" name="gender"
             <?php if (isset($gender) && $gender=="female")?>    
-            >Female
+            value="female">Female
             <input type="radio" name="gender"
-            <?php if (isset($gender) && $gender=="male") echo "checked";?>
-            >Male
+            <?php if (isset($gender) && $gender=="male")?>
+            value="male">Male
             
             <br><br>
             <input type = "submit" name = "submit" value = "Submit">
