@@ -2,12 +2,12 @@
         echo '<h1>getParameters page</h1>';
         
         
-        $name = $_GET["name"];
-        $age = $_GET["age"];
-        $email = $_GET["email"];
-        $num = $_GET["number"];
-        $com = $_GET["comment"];
-        $gen = $_GET["gender"];
+        $name = $_POST["name"];
+        $age = $_POST["age"];
+        $email = $_POST["email"];
+        $num = $_POST["number"];
+        $com = $_POST["comment"];
+        $gen = $_POST["gender"];
         
 
         echo $name;
