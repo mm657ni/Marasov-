@@ -15,6 +15,6 @@ echo '<p>Gender: <input type="radio" name ="gender"
  <?php if (isset($gender) && $gender=="male") echo "checked";?>
  Male</p>';
 
-echo '<p><input type="button", value="submit"></p>';
+echo '<p><input type="submit", value="submit"></p>';
 
 ?>
