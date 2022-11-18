@@ -1,17 +1,13 @@
 <?php
-
 echo '<h1>PHP Form</h1>';
+?>
 
-<html>
-    <head>
-        <title>PHP Form</title>
-    </head>
-  
+<html> 
     <body>
-        <form action = "get-method.php" method = "post">
+        <form action = "file.php" method = "post">
               
-            Name : <input type = "text" name = "name" >
-            Age: <input type = "text" name = "age" >
+            Name : <input type = "text" name = "name" ><br>
+            Age: <input type = "text" name = "age" ><br>
             Email: <input type = "text" name = "email" >
             Phone Number: <input = "text" name = "number" >
             Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
@@ -28,5 +24,3 @@ echo '<h1>PHP Form</h1>';
         </form>
     </body>
 </html> 
-
-?>
