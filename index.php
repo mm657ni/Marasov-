@@ -1,20 +1,32 @@
 <?php
 
-echo '<h1>PHP Form</h1>'; 
+echo '<h1>PHP Form</h1>';
 
-echo 'Name: <input type="text" name="name">';
-echo '<p>Age: <input type="text" name="age"></p>';
-echo '<p>Email: <input type="text" name="email"></p>';
-echo '<p>Phone number: <input type="text" name="number"></p>';
-echo '<p>Comment: <textarea name="comment" rows="5" cols="40"></textarea></p>';
+<html>
+    <head>
+        <title>PHP Form</title>
+    </head>
+  
+    <body>
+        <form action = "get-method.php" method = "post">
+              
+            Name : <input type = "text" name = "name" >
+            Age: <input type = "text" name = "age" >
+            Email: <input type = "text" name = "email" >
+            Phone Number: <input = "text" name = "number" >
+            Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
 
-echo '<p>Gender: <input type="radio" name ="gender"
- <?php if (isset($gender) && $gender=="female") echo "checked";?> 
- Female 
- <input type="radio" name="gender"
- <?php if (isset($gender) && $gender=="male") echo "checked";?>
- Male</p>';
-
-echo '<p><input type="submit", value="submit"></p>';
+            Gender:
+            <input type="radio" name="gender"
+            <?php if (isset($gender) && $gender=="female") echo "checked";?>    
+            value="female">Female
+            <input type="radio" name="gender"
+            <?php if (isset($gender) && $gender=="male") echo "checked";?>
+            value="male">Male
+              
+            <input type = "submit" name = "submit" value = "Submit">
+        </form>
+    </body>
+</html> 
 
 ?>
