@@ -19,7 +19,7 @@ echo '<h1>PHP Form</h1>';
 
             Gender:
             <input type="radio" name="gender"
-            <?php if (isset($gender) && $gender=="female") echo "checked";?>    
+            <?php if (isset($gender) && $gender=="female")?>    
             >Female
             <input type="radio" name="gender"
             <?php if (isset($gender) && $gender=="male") echo "checked";?>
