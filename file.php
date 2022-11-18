@@ -10,11 +10,17 @@
         
         $file1 = fopen("sensors.txt","w") or die("Unable to open file!");
         
-        fwrite($file1, $name "\n");
-        fwrite($file1, $age "\n");
+        fwrite($file1, "Name: ")
+        fwrite($file1, $name ."\n");
+        fwrite($file1, "Age: ")
+        fwrite($file1, $age ."\n");
+        fwrite($file1, "Email: ")
         fwrite($file1, $email ."\n");
+        fwrite($file1, "Phone number: ")
         fwrite($file1, $num ."\n");
+        fwrite($file1, "Comment: ")
         fwrite($file1, $com ."\n");
+        fwrite($file1, "Gender: ")
         fwrite($file1, $gen ."\n");
         fclose($file1);
         
